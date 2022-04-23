@@ -1,0 +1,83 @@
+html {
+  background-color: black;
+}
+.home {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.home__container {
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home-roof {
+  height: 0;
+  width: 0;
+  border-left: 130px solid transparent;
+  border-right: 130px solid transparent;
+  border-bottom: 130px solid orange;
+  position: relative;
+}
+.home-chimney {
+  height: 70px;
+  position: absolute;
+  width: 30px;
+  background-color: orange;
+  right: 55px;
+  bottom: -93px;
+}
+.home__body {
+  background-color: orange;
+  height: 200px;
+  padding: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.home__door {
+  background-color: red;
+  height: 50px;
+}
+.home-windows {
+  display: flex;
+  justify-content: space-between;
+}
+.home-windows__container {
+  height: 40px;
+  width: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.home-windows__pane {
+  background-color: black;
+  width: 15px;
+  height: 15px;
+}
+.home-windows__pane:nth-child(2n + 1) {
+  margin-right: 10px;
+}
+.home-windows__pane:nth-last-child(n),
+.home-windows__pane:nth-last-child(n-1) {
+  margin-top: 10px;
+}
+.home__door {
+  width: 40px;
+  height: 50px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+.home__knob {
+  border-radius: 50px;
+  background-color: black;
+  width: 5px;
+  height: 5px;
+}
